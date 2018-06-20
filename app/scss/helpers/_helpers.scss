@@ -1,0 +1,19 @@
+@import 'fonts';
+
+@mixin breakpoint($point, $type: max-width) {
+  @media screen and (#{$type}: #{$point}) {
+    @content;
+  }
+}
+
+$background-blue: #F2FAFF;
+$white: #fff;
+$divider-blue: rgba(0, 111, 160, 0.4);
+$btn-text-black: #004461;
+$text-blue: #006FA0;
+$text-black: #424242;
+$btn-orange: #FFC81B;
+$bullet-color-active: #13C1E5;
+$bullet-color: rgba(19, 193, 229, 0.4);
+
+$custom-bp: 768px;
